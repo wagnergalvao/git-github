@@ -1,69 +1,18 @@
-
-git init
-	Cria um repositório Git na branch master
-git status
-	On branch master
-	
-	No commits yet
-	
-	Untracked files:
-	(use "git add <file>..." to include in what will be committed)
-			index.html
-	
-	nothing added to commit but untracked files present (use "git add" to track)
-
-git config --global user.name "Seu nome aqui" ou git config --local user.name "Seu nome aqui"
-git config --global user.email "seu@email.aqui" ou git config --local user.email "seu@email.aqui"
-
-$ git config -l
-	Lista as configurações globais e locais do Git
-git config --global -l
-	core.editor="C:\Users\MyDir\AppData\Local\Programs\Microsoft VS Code\Code.exe" --wait
-	user.name=Meu Nome
-	user.email=meu@email.com
-git config --local -l
-	core.repositoryformatversion=0
-	core.filemode=false
-	core.bare=false
-	core.logallrefupdates=true
-	core.symlinks=false
-	core.ignorecase=true
-
-git add <file> ou git add .
-	Adicona o(s) arquivo(s) ao monitoramento
-	git status
-		On branch master
-		
-		No commits yet
-		
-		Changes to be committed:
-		(use "git rm --cached <file>..." to unstage)
-				new file:   Alura-git-github
-				new file:   index.html
-
-git rm --cached <file> ou git rm --cached
-	git rm --cached Alura-git-github
-	rm 'Alura-git-github'
-	$ git status
-		On branch master
-		
-		No commits yet
-		
-		Changes to be committed:
-		(use "git rm --cached <file>..." to unstage)
-				new file:   index.html
-	
-		Untracked files:
-		(use "git add <file>..." to include in what will be committed)
-				Alura-git-github
-
-git commit "mensagem"
-	Monitora os arquivos
-	git commit -m "Atualizado em 24/06/2021 18:19:45"
-		[master (root-commit) b0d2370] Atualizado em 24/06/2021 18:19:45
-		2 files changed, 76 insertions(+)
-		create mode 100644 Alura-git-github
-		create mode 100644 index.html
-	git status
-		On branch master
-		nothing to commit, working tree clean
+git init	Cria um repositório Git na branch master
+git status	Lista os status do repositório (branch, commits, Untracked files, Changes to be committed)	https://git-scm.com/book/pt-br/v2/Fundamentos-de-Git-Gravando-Altera%C3%A7%C3%B5es-em-Seu-Reposit%C3%B3rio
+git config --global user.name "Seu nome aqui"	Configura user.name para todos repositórios	https://git-scm.com/book/en/v2/Customizing-Git-Git-Configuration
+git config --local user.name "Seu nome aqui"	Configura user.name no repositório
+git config --global user.email "seu@email.aqui"	Configura user.email para todos repositórios
+git config --local user.email "seu@email.aqui"	Configura user.email no repositório
+git config -l	Lista todas configurações globais e locais do Git
+git config --global -l	Lista somente as configurações globais
+git config --local -l	Lista somente as configurações locais
+git add <file>	Adicona o arquivo ao monitoramento
+git add .	Adicona todos arquivos ao monitoramento
+git rm --cached <file>	Remove o arquivo do monitoramento
+git rm --cached	Remove todos arquivos do monitoramento
+git commit "mensagem"	Monitora todos arquivos monitorados
+git log	Lista os commits realizados	https://devhints.io/git-log
+git log --oneline	Lista os commits realizados resumidamente
+git log -p	Lista os commits realizados detalhadamente
+git log --pretty="format:%H"	Lista os commits conforme formatação	https://devhints.io/git-log-format
