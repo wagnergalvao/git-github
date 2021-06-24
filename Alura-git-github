@@ -1,0 +1,58 @@
+cd C:\wagner.galvao\node\git-github
+
+git init
+	Cria um repositório Git na branch master
+git status
+	On branch master
+	
+	No commits yet
+	
+	Untracked files:
+	(use "git add <file>..." to include in what will be committed)
+			index.html
+	
+	nothing added to commit but untracked files present (use "git add" to track)
+
+git config --global user.name "Seu nome aqui" ou git config --local user.name "Seu nome aqui"
+git config --global user.email "seu@email.aqui" ou git config --local user.email "seu@email.aqui"
+
+$ git config -l
+	Lista as configurações globais e locais do Git
+git config --global -l
+	core.editor="C:\Users\MyDir\AppData\Local\Programs\Microsoft VS Code\Code.exe" --wait
+	user.name=Meu Nome
+	user.email=meu@email.com
+git config --local -l
+	core.repositoryformatversion=0
+	core.filemode=false
+	core.bare=false
+	core.logallrefupdates=true
+	core.symlinks=false
+	core.ignorecase=true
+git add <file> ou git add .
+	Adicona o(s) arquivo(s) ao monitoramento
+	git status
+		On branch master
+		
+		No commits yet
+		
+		Changes to be committed:
+		(use "git rm --cached <file>..." to unstage)
+				new file:   Alura-git-github
+				new file:   index.html
+git rm --cached <file> ou git rm --cached
+	git rm --cached Alura-git-github
+	rm 'Alura-git-github'
+	$ git status
+		On branch master
+		
+		No commits yet
+		
+		Changes to be committed:
+		(use "git rm --cached <file>..." to unstage)
+				new file:   index.html
+	
+		Untracked files:
+		(use "git add <file>..." to include in what will be committed)
+				Alura-git-github
+
