@@ -25,8 +25,9 @@ git remote rename origin local	Renomeia o repositório remoto
 git clone C:\wagner.galvao\node\git-repository git-github2 Clona um repositório em um novo diretório (git-github2)	https://git-scm.com/docs/git-clone
 git push local master	Atualizar o repositório remoto (local) com a árvore de trabalho e indice da branch (master) do repositório	https://git-scm.com/docs/git-push
 git pull local master	Atualizar a árvore de trabalho e índice da branch (master) do repositório com a árvore de trabalho e índice do repositorio remoto (local)	https://git-scm.com/docs/git-pull
-git branch	Lista, cria ou exclui ramos	https://git-scm.com/docs/git-branch
+git branch	lista, cria ou exclui ramos	https://git-scm.com/docs/git-branch
 git branch titulo	cria o ramo (titulo)
 git checkout titulo	Alterna para o ramo (titulo)	https://git-scm.com/docs/git-checkout
 git checkout -b lista	Cria e alterna para o ramo (lista)
-git merge titulo	Juta o ramo (titulo) no ramo atual	https://git-scm.com/docs/git-merge
+git merge titulo	Junta o ramo (titulo) no ramo atual	https://git-scm.com/docs/git-merge
+git rebase lista	Replica os commits do rmano (lista) no ramo atual	https://git-scm.com/docs/git-rebase
