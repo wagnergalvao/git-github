@@ -29,6 +29,12 @@ git branch	lista, cria ou exclui ramos	https://git-scm.com/docs/git-branch
 git branch titulo	cria o ramo (titulo)
 git checkout titulo	Alterna para o ramo (titulo)	https://git-scm.com/docs/git-checkout
 git checkout -b lista	Cria e alterna para o ramo (lista)
+git checkout --index.html	Alterna (index.html) para a versão do último commit
 git merge titulo	Junta o ramo (titulo) no ramo atual	https://git-scm.com/docs/git-merge
 git rebase lista	Replica os commits do rmano (lista) no ramo atual	https://git-scm.com/docs/git-rebase
 git rebase X git merge		https://medium.com/datadriveninvestor/git-rebase-vs-merge-cc5199edd77c
+git reset HEAD index.html	Redefine o HEAD atual do arquivo (index.html) para o status informado.
+git revert bd995a8bc86e62395bc0df298c3de7ad9566aad0	Reverte o commit do hash indicado	https://git-scm.com/docs/git-revert
+git stash	Salva separadamente as alterações temporárias	https://git-scm.com/docs/git-stash
+git stash list Lista as alterações temporárias
+git stash pop	Recupera e aplica as últimas alterações temporárias e remove da lista
