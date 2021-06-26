@@ -24,6 +24,7 @@ git remote add local C:\wagner.galvao\node\git-repository Cria um repositório r
 git remote rename origin local	Renomeia o repositório remoto
 git clone C:\wagner.galvao\node\git-repository git-github2 Clona um repositório em um novo diretório (git-github2)	https://git-scm.com/docs/git-clone
 git push local master	Atualizar o repositório remoto (local) com a árvore de trabalho e indice da branch (master) do repositório	https://git-scm.com/docs/git-push
+git push local v0.1.0	Atualizar o repositorio remoto (local) com a tag (v0.1.0)
 git pull local master	Atualizar a árvore de trabalho e índice da branch (master) do repositório com a árvore de trabalho e índice do repositorio remoto (local)	https://git-scm.com/docs/git-pull
 git branch	lista, cria ou exclui ramos	https://git-scm.com/docs/git-branch
 git branch titulo	cria o ramo (titulo)
@@ -39,3 +40,8 @@ git revert bd995a8	Reverte o commit do hash indicado	https://git-scm.com/docs/gi
 git stash	Salva separadamente as alterações temporárias	https://git-scm.com/docs/git-stash
 git stash list Lista as alterações temporárias
 git stash pop	Recupera e aplica as últimas alterações temporárias e remove da lista
+git diff	Exibe as alterações que ainda não foram adicionadas ao índice	https://git-scm.com/docs/git-diff
+git diff bd995a8..70eef30 Exibe as alterações do commit (bd995a8) até (70eef30)
+git tag -a v0.1.0 -m "mensagem"	Criar um objeto de tag (v0.1.0) com a mensagem (mensagem)	https://git-scm.com/docs/git-tag
+git tag	Lista todas as tags
+
